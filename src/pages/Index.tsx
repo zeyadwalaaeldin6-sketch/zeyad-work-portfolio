@@ -54,25 +54,38 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Header Section */}
-      <header className="bg-gradient-hero text-primary-foreground relative overflow-hidden">
-        <div className="absolute inset-0 bg-black/10"></div>
-        <div className="relative max-w-6xl mx-auto px-6 py-20 lg:py-32">
-          <div className="text-center space-y-6">
-            <div className="inline-flex items-center gap-2 bg-primary-light/20 backdrop-blur-sm px-4 py-2 rounded-full border border-primary-foreground/20">
+      <header className="bg-gradient-hero text-primary-foreground relative overflow-hidden min-h-screen flex items-center">
+        {/* Profile Image with Gradient Overlay */}
+        <div className="absolute inset-0 flex items-center justify-end pr-8 lg:pr-16">
+          <div className="relative">
+            <div className="absolute inset-0 bg-gradient-profile rounded-full blur-xl scale-110"></div>
+            <img 
+              src="/lovable-uploads/ddf3728d-9e05-4380-8ac0-d865b12f9ad0.png"
+              alt="Zeyad Walaaeldin Ahmed - Professional Profile" 
+              className="relative w-72 h-72 lg:w-96 lg:h-96 object-cover rounded-full shadow-elegant opacity-80"
+            />
+            <div className="absolute inset-0 bg-gradient-to-l from-transparent via-background/20 to-background/60 rounded-full"></div>
+          </div>
+        </div>
+        
+        {/* Content */}
+        <div className="relative max-w-6xl mx-auto px-6 py-20 lg:py-32 z-10">
+          <div className="max-w-3xl space-y-8">
+            <div className="inline-flex items-center gap-2 bg-primary/20 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/30 shadow-glow">
               <Database className="h-4 w-4" />
               <span className="text-sm font-medium">Data Analyst</span>
             </div>
-            <h1 className="text-4xl lg:text-6xl font-bold tracking-tight">
-              Zeyad Walaaeldin Ahmed
+            <h1 className="text-4xl lg:text-7xl font-bold tracking-tight leading-tight">
+              Zeyad Walaaeldin 
+              <span className="block text-primary">Ahmed</span>
             </h1>
-            <p className="text-lg lg:text-xl max-w-3xl mx-auto opacity-90 leading-relaxed">
+            <p className="text-lg lg:text-xl opacity-90 leading-relaxed max-w-2xl">
               I help organizations transform data into clarity—turning numbers into insights and insights into confident, strategic decisions.
             </p>
-            <div className="flex flex-wrap justify-center gap-4 pt-6">
+            <div className="flex flex-wrap gap-4 pt-8">
               <Button 
                 size="lg" 
-                variant="outline" 
-                className="bg-primary-foreground/10 backdrop-blur-sm border-primary-foreground/30 hover:bg-primary-foreground/20 text-primary-foreground"
+                className="bg-primary hover:bg-primary-dark shadow-glow hover:shadow-elegant transition-all duration-300"
                 asChild
               >
                 <a href="mailto:Zeyadwalaaeldin6@gmail.com" className="flex items-center gap-2">
@@ -83,7 +96,7 @@ const Index = () => {
               <Button 
                 size="lg" 
                 variant="outline"
-                className="bg-primary-foreground/10 backdrop-blur-sm border-primary-foreground/30 hover:bg-primary-foreground/20 text-primary-foreground"
+                className="border-primary/50 text-primary-foreground hover:bg-primary/10 backdrop-blur-sm transition-all duration-300"
                 asChild
               >
                 <a href="https://www.linkedin.com/in/zeyadwalaaeldin" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">

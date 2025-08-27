@@ -8,41 +8,44 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 250 20% 97%;
-    --foreground: 120 15% 15%;
+    --background: 222 15% 8%;
+    --foreground: 210 20% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 120 15% 15%;
+    --card: 222 15% 12%;
+    --card-foreground: 210 20% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 120 15% 15%;
+    --popover: 222 15% 12%;
+    --popover-foreground: 210 20% 98%;
 
-    --primary: 120 25% 35%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 220 40% 65%;
+    --primary-foreground: 222 15% 8%;
 
-    --secondary: 120 10% 90%;
-    --secondary-foreground: 120 15% 15%;
+    --secondary: 222 15% 18%;
+    --secondary-foreground: 210 20% 98%;
 
-    --muted: 120 8% 92%;
-    --muted-foreground: 120 10% 45%;
+    --muted: 222 15% 15%;
+    --muted-foreground: 210 10% 70%;
 
-    --accent: 120 15% 88%;
-    --accent-foreground: 120 15% 15%;
+    --accent: 220 25% 25%;
+    --accent-foreground: 210 20% 98%;
 
     /* Design system additions */
-    --primary-light: 120 20% 45%;
-    --gradient-hero: linear-gradient(135deg, hsl(120 25% 35%), hsl(120 20% 45%));
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(120 8% 96%));
-    --shadow-elegant: 0 10px 30px -10px hsl(120 25% 35% / 0.15);
-    --shadow-card: 0 4px 20px -4px hsl(120 25% 35% / 0.1);
+    --primary-light: 220 35% 75%;
+    --primary-dark: 220 45% 55%;
+    --gradient-hero: linear-gradient(135deg, hsl(222 15% 8%), hsl(220 25% 15%), hsl(220 40% 25%));
+    --gradient-card: linear-gradient(145deg, hsl(222 15% 12%), hsl(222 15% 15%));
+    --gradient-profile: linear-gradient(135deg, hsla(220 40% 65% / 0.8), hsla(220 25% 25% / 0.2));
+    --shadow-elegant: 0 20px 60px -20px hsl(220 40% 15% / 0.4);
+    --shadow-card: 0 8px 32px -8px hsl(220 40% 15% / 0.3);
+    --shadow-glow: 0 0 40px hsl(220 40% 65% / 0.15);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 222 15% 20%;
+    --input: 222 15% 20%;
+    --ring: 220 40% 65%;
 
     --radius: 0.5rem;
 
