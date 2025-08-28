@@ -48,6 +48,10 @@ const Index = () => {
     {
       title: "Premier League Players Data Analysis",
       description: "Explored player statistics and performance patterns through advanced data visualization and statistical modeling."
+    },
+    {
+      title: "Customer Segmentation Analysis",
+      description: "Developed comprehensive customer classification models using RFM analysis and clustering algorithms to optimize marketing strategies and improve customer retention rates."
     }
   ];
 
@@ -63,7 +67,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-6 py-20 lg:py-32 flex items-center min-h-screen">
           <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
             {/* Content */}
-            <div className="space-y-8 z-10">
+            <div className="space-y-8 z-10 text-center lg:text-left">
               <div className="inline-flex items-center gap-2 bg-primary/20 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/30 shadow-glow animate-pulse">
                 <Database className="h-4 w-4 text-white" />
                 <span className="text-sm font-medium text-white">Data Analyst</span>
