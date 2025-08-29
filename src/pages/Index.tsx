@@ -67,7 +67,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-6 py-20 lg:py-32 flex items-center min-h-screen">
           <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
             {/* Content */}
-            <div className="space-y-8 z-10 text-center lg:text-left">
+            <div className="space-y-8 z-10 text-center">
               <div className="inline-flex items-center gap-2 bg-primary/20 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/30 shadow-glow animate-pulse">
                 <Database className="h-4 w-4 text-white" />
                 <span className="text-sm font-medium text-white">Data Analyst</span>
@@ -76,40 +76,56 @@ const Index = () => {
                 Zeyad Walaaeldin 
                 <span className="block text-primary-light bg-gradient-to-r from-primary-light to-blue-300 bg-clip-text text-transparent">Ahmed</span>
               </h1>
-              <p className="text-lg lg:text-xl leading-relaxed text-white/90 max-w-xl">
+              <p className="text-lg lg:text-xl leading-relaxed text-white/90 max-w-xl mx-auto">
                 I help organizations transform data into clarity—turning numbers into insights and insights into confident, strategic decisions.
               </p>
-              <div className="flex flex-wrap gap-4 pt-8">
-                <Button 
-                  size="lg" 
-                  className="bg-primary hover:bg-primary-dark shadow-glow hover:shadow-elegant transition-all duration-500 hover:scale-105"
-                  asChild
-                >
-                  <a href="mailto:Zeyadwalaaeldin6@gmail.com" className="flex items-center gap-2">
-                    <Mail className="h-4 w-4" />
-                    Contact Me
-                  </a>
-                </Button>
-                <Button 
-                  size="lg" 
-                  className="bg-primary hover:bg-primary-dark shadow-glow hover:shadow-elegant transition-all duration-500 hover:scale-105"
-                  asChild
-                >
-                  <a href="https://www.linkedin.com/in/zeyadwalaaeldin" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                    <Linkedin className="h-4 w-4" />
-                    LinkedIn
-                  </a>
-                </Button>
-                <Button 
-                  size="lg" 
-                  className="bg-green-600 hover:bg-green-700 text-white shadow-glow hover:shadow-elegant transition-all duration-500 hover:scale-105"
-                  asChild
-                >
-                  <a href="https://wa.me/201158166331" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                    <MessageCircle className="h-4 w-4" />
-                    WhatsApp
-                  </a>
-                </Button>
+              <div className="flex flex-col items-center gap-4 pt-8">
+                {/* Top row: Contact Me and LinkedIn */}
+                <div className="flex flex-wrap justify-center gap-4">
+                  <Button 
+                    size="lg" 
+                    className="bg-primary hover:bg-primary-dark shadow-glow hover:shadow-elegant transition-all duration-500 hover:scale-105"
+                    asChild
+                  >
+                    <a href="mailto:Zeyadwalaaeldin6@gmail.com" className="flex items-center gap-2">
+                      <Mail className="h-4 w-4" />
+                      Contact Me
+                    </a>
+                  </Button>
+                  <Button 
+                    size="lg" 
+                    className="bg-primary hover:bg-primary-dark shadow-glow hover:shadow-elegant transition-all duration-500 hover:scale-105"
+                    asChild
+                  >
+                    <a href="https://www.linkedin.com/in/zeyadwalaaeldin" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                      <Linkedin className="h-4 w-4" />
+                      LinkedIn
+                    </a>
+                  </Button>
+                </div>
+                {/* Bottom row: WhatsApp and GitHub */}
+                <div className="flex flex-wrap justify-center gap-4">
+                  <Button 
+                    size="lg" 
+                    className="bg-green-600 hover:bg-green-700 text-white shadow-glow hover:shadow-elegant transition-all duration-500 hover:scale-105"
+                    asChild
+                  >
+                    <a href="https://wa.me/201158166331" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                      <MessageCircle className="h-4 w-4" />
+                      WhatsApp
+                    </a>
+                  </Button>
+                  <Button 
+                    size="lg" 
+                    className="bg-gray-800 hover:bg-gray-900 text-white shadow-glow hover:shadow-elegant transition-all duration-500 hover:scale-105"
+                    asChild
+                  >
+                    <a href="https://github.com/zeyadwalaaeldin6-sketch" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                      <Github className="h-4 w-4" />
+                      GitHub
+                    </a>
+                  </Button>
+                </div>
               </div>
             </div>
             
@@ -133,6 +149,27 @@ const Index = () => {
       {/* Main Content */}
       <main className="max-w-6xl mx-auto px-6 py-16 space-y-20">
         
+        {/* About Me Section */}
+        <section>
+          <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
+            <Users className="h-8 w-8 text-primary-light" />
+            About Me
+          </h2>
+          <Card className="bg-gradient-card border-0 shadow-card-hover hover:shadow-elegant transition-all duration-300">
+            <CardContent className="p-8">
+              <p className="text-white/90 text-lg leading-relaxed">
+                My journey in data analysis began with a passion for numbers and statistics, seeking to uncover patterns that reveal valuable insights. I discovered the perfect blend of problem-solving, attention to detail, and creative thinking that this field demands. As I mastered tools like Excel and Power BI, I developed a keen interest in transforming raw data into clear, compelling visualizations that tell meaningful stories.
+              </p>
+              <p className="text-white/90 text-lg leading-relaxed mt-4">
+                Over time, my focus evolved beyond simply creating reports to understanding how data can drive strategic decision-making. I take pride in bridging the gap between complex datasets and actionable insights, helping stakeholders make informed choices with confidence.
+              </p>
+              <p className="text-white/90 text-lg leading-relaxed mt-4">
+                Now, as an emerging data analyst, I am committed to transforming intricate information into clear, strategic insights that empower individuals and organizations to make better, more informed decisions.
+              </p>
+            </CardContent>
+          </Card>
+        </section>
+
         {/* Education Section */}
         <section>
           <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
