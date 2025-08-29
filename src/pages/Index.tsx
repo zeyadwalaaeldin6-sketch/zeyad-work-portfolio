@@ -13,13 +13,13 @@ const Index = () => {
     },
     {
       role: "Financial Inclusion and Risk Management Intern",
-      company: "CIB",
+      company: "Commercial International Bank Egypt (CIB)",
       period: "Aug 2025",
       type: "intern"
     },
     {
       role: "Accounting Intern",
-      company: "Arab African International Bank",
+      company: "Arab African International Bank (AAIB)",
       period: "Jul 2025",
       type: "intern"
     },
@@ -221,10 +221,12 @@ const Index = () => {
                           </h3>
                           <Badge 
                             variant={job.type === 'current' ? 'default' : 'secondary'} 
-                            className={`text-xs ${
+                            className={`text-xs font-medium ${
                               job.type === 'current' 
-                                ? 'bg-primary/20 text-primary border-primary/30 animate-pulse' 
-                                : 'bg-secondary/20 text-secondary border-secondary/30'
+                                ? 'bg-primary/30 text-primary-light border-primary/50 animate-pulse shadow-glow' 
+                                : job.type === 'intern'
+                                ? 'bg-blue-500/20 text-blue-300 border-blue-400/40 shadow-sm'
+                                : 'bg-green-500/20 text-green-300 border-green-400/40 shadow-sm'
                             }`}
                           >
                             {job.type === 'current' ? '🚀 Current' : job.type === 'intern' ? '💼 Internship' : '🤝 Volunteer'}
