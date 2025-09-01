@@ -2,6 +2,7 @@ import { Mail, Linkedin, Github, Database, BarChart3, TrendingUp, Users, Award, 
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { SmoothNavigation } from "@/components/SmoothNavigation";
 
 const Index = () => {
   const workExperience = [
@@ -61,9 +62,12 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background scroll-smooth">
+      {/* Smooth Navigation */}
+      <SmoothNavigation />
+      
       {/* Header Section */}
-      <header className="bg-gradient-hero text-primary-foreground relative overflow-hidden min-h-screen">
+      <header id="hero" className="bg-gradient-hero text-primary-foreground relative overflow-hidden min-h-screen">
         <div className="max-w-7xl mx-auto px-6 py-20 lg:py-32 flex items-center min-h-screen">
           <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
             {/* Content */}
@@ -150,7 +154,7 @@ const Index = () => {
       <main className="max-w-6xl mx-auto px-6 py-16 space-y-20">
         
         {/* About Me Section */}
-        <section>
+        <section id="about">
           <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
             <Users className="h-8 w-8 text-primary-light" />
             About Me
@@ -171,7 +175,7 @@ const Index = () => {
         </section>
 
         {/* Education Section */}
-        <section>
+        <section id="education">
           <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
             <Award className="h-8 w-8 text-primary-light" />
             Education
@@ -197,7 +201,7 @@ const Index = () => {
         </section>
 
         {/* Work Experience Section */}
-        <section>
+        <section id="experience">
           <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
             <BarChart3 className="h-8 w-8 text-primary-light" />
             Professional Journey
@@ -249,7 +253,7 @@ const Index = () => {
         </section>
 
         {/* Skills Section */}
-        <section>
+        <section id="skills">
           <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
             <TrendingUp className="h-8 w-8 text-primary-light" />
             Skills
@@ -290,7 +294,7 @@ const Index = () => {
         </section>
 
         {/* Projects Section */}
-        <section>
+        <section id="projects">
           <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
             <Database className="h-8 w-8 text-primary-light" />
             Featured Projects
@@ -343,7 +347,7 @@ const Index = () => {
         </section>
 
         {/* Contact Section */}
-        <section className="text-center">
+        <section id="contact" className="text-center">
           <div className="bg-gradient-hero rounded-2xl p-12 text-primary-foreground relative overflow-hidden">
             <div className="absolute inset-0 bg-black/10 rounded-2xl"></div>
             <div className="relative">
