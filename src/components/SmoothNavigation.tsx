@@ -1,26 +1,30 @@
 import { useState, useEffect } from 'react';
 import { cn } from "@/lib/utils";
 import { User, GraduationCap, Briefcase, TrendingUp, Database, Mail } from 'lucide-react';
+import { useTranslation } from "@/hooks/useTranslation";
+
+type TranslationKey = 'home' | 'about' | 'education' | 'experience' | 'skills' | 'projects' | 'contact';
 
 interface NavItem {
   id: string;
-  label: string;
+  labelKey: TranslationKey;
   icon: React.ComponentType<any>;
 }
 
 const navItems: NavItem[] = [
-  { id: 'hero', label: 'Home', icon: User },
-  { id: 'about', label: 'About', icon: User },
-  { id: 'education', label: 'Education', icon: GraduationCap },
-  { id: 'experience', label: 'Experience', icon: Briefcase },
-  { id: 'skills', label: 'Skills', icon: TrendingUp },
-  { id: 'projects', label: 'Projects', icon: Database },
-  { id: 'contact', label: 'Contact', icon: Mail },
+  { id: 'hero', labelKey: 'home', icon: User },
+  { id: 'about', labelKey: 'about', icon: User },
+  { id: 'education', labelKey: 'education', icon: GraduationCap },
+  { id: 'experience', labelKey: 'experience', icon: Briefcase },
+  { id: 'skills', labelKey: 'skills', icon: TrendingUp },
+  { id: 'projects', labelKey: 'projects', icon: Database },
+  { id: 'contact', labelKey: 'contact', icon: Mail },
 ];
 
 export const SmoothNavigation = () => {
   const [activeSection, setActiveSection] = useState('hero');
   const [isVisible, setIsVisible] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     // Show navigation after initial load
@@ -73,7 +77,7 @@ export const SmoothNavigation = () => {
     >
       <div className="bg-background/20 backdrop-blur-md border border-primary/20 rounded-2xl p-2 shadow-elegant">
         <div className="flex flex-col gap-1">
-          {navItems.map(({ id, label, icon: Icon }) => (
+          {navItems.map(({ id, labelKey, icon: Icon }) => (
             <button
               key={id}
               onClick={() => scrollToSection(id)}
@@ -84,7 +88,7 @@ export const SmoothNavigation = () => {
                   ? "bg-primary/20 text-primary-light shadow-glow scale-105"
                   : "text-white/60 hover:text-white"
               )}
-              title={label}
+              title={t(labelKey)}
             >
               {/* Icon */}
               <Icon 
@@ -104,7 +108,7 @@ export const SmoothNavigation = () => {
                   activeSection === id ? "text-primary-light" : "text-white"
                 )}
               >
-                {label}
+                {t(labelKey)}
                 {/* Arrow */}
                 <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1 w-2 h-2 bg-background/90 border-l border-b border-primary/20 rotate-45"></div>
               </span>

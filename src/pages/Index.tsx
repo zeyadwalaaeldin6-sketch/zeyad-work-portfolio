@@ -3,8 +3,12 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { SmoothNavigation } from "@/components/SmoothNavigation";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const Index = () => {
+  const { t, changeLanguage, isRTL } = useTranslation();
+  
   const workExperience = [
     {
       role: "Data Analysis Trainee",
@@ -62,7 +66,10 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background scroll-smooth">
+    <div className={`min-h-screen bg-background scroll-smooth ${isRTL ? 'rtl' : 'ltr'}`}>
+      {/* Language Switcher */}
+      <LanguageSwitcher onLanguageChange={changeLanguage} />
+      
       {/* Smooth Navigation */}
       <SmoothNavigation />
       
@@ -74,14 +81,13 @@ const Index = () => {
             <div className="space-y-8 z-10 text-center">
               <div className="inline-flex items-center gap-2 bg-primary/20 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/30 shadow-glow animate-pulse">
                 <Database className="h-4 w-4 text-white" />
-                <span className="text-sm font-medium text-white">Data Analyst</span>
+                <span className="text-sm font-medium text-white">{t('dataAnalyst')}</span>
               </div>
               <h1 className="text-4xl lg:text-7xl font-bold tracking-tight leading-tight text-white">
-                Zeyad Walaaeldin 
-                <span className="block text-primary-light bg-gradient-to-r from-primary-light to-blue-300 bg-clip-text text-transparent">Ahmed</span>
+                {t('name')}
               </h1>
               <p className="text-lg lg:text-xl leading-relaxed text-white/90 max-w-xl mx-auto">
-                I help organizations transform data into clarity—turning numbers into insights and insights into confident, strategic decisions.
+                {t('heroDescription')}
               </p>
               <div className="flex flex-col items-center gap-4 pt-8">
                 {/* Top row: Contact Me and LinkedIn */}
@@ -93,7 +99,7 @@ const Index = () => {
                   >
                     <a href="mailto:Zeyadwalaaeldin6@gmail.com" className="flex items-center gap-2">
                       <Mail className="h-4 w-4" />
-                      Contact Me
+                      {t('contactMe')}
                     </a>
                   </Button>
                   <Button 
@@ -157,18 +163,18 @@ const Index = () => {
         <section id="about">
           <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
             <Users className="h-8 w-8 text-primary-light" />
-            About Me
+            {t('aboutTitle')}
           </h2>
           <Card className="bg-gradient-card border-0 shadow-card-hover hover:shadow-elegant transition-all duration-300">
             <CardContent className="p-8">
               <p className="text-white/90 text-lg leading-relaxed">
-                My journey in data analysis began with a passion for numbers and statistics, seeking to uncover patterns that reveal valuable insights. I discovered the perfect blend of problem-solving, attention to detail, and creative thinking that this field demands. As I mastered tools like Excel and Power BI, I developed a keen interest in transforming raw data into clear, compelling visualizations that tell meaningful stories.
+                {t('aboutText1')}
               </p>
               <p className="text-white/90 text-lg leading-relaxed mt-4">
-                Over time, my focus evolved beyond simply creating reports to understanding how data can drive strategic decision-making. I take pride in bridging the gap between complex datasets and actionable insights, helping stakeholders make informed choices with confidence.
+                {t('aboutText2')}
               </p>
               <p className="text-white/90 text-lg leading-relaxed mt-4">
-                Now, as an emerging data analyst, I am committed to transforming intricate information into clear, strategic insights that empower individuals and organizations to make better, more informed decisions.
+                {t('aboutText3')}
               </p>
             </CardContent>
           </Card>
@@ -178,17 +184,17 @@ const Index = () => {
         <section id="education">
           <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
             <Award className="h-8 w-8 text-primary-light" />
-            Education
+            {t('educationTitle')}
           </h2>
           <Card className="bg-gradient-card border-0 shadow-card-hover hover:shadow-elegant transition-all duration-300">
             <CardContent className="p-8">
               <div className="flex items-start justify-between flex-wrap gap-4">
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-2">
-                    Faculty of Commerce
+                    {t('faculty')}
                   </h3>
                   <p className="text-white/80 mb-2">
-                    Georgia State University Joint Program with Cairo University
+                    {t('university')}
                   </p>
                   <div className="flex items-center gap-2 text-sm text-white/70">
                     <Calendar className="h-4 w-4" />
@@ -204,7 +210,7 @@ const Index = () => {
         <section id="experience">
           <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
             <BarChart3 className="h-8 w-8 text-primary-light" />
-            Professional Journey
+            {t('experienceTitle')}
           </h2>
           <div className="relative">
             {/* Timeline Line */}
@@ -233,7 +239,7 @@ const Index = () => {
                                 : 'bg-green-500/20 text-green-300 border-green-400/40 shadow-sm'
                             }`}
                           >
-                            {job.type === 'current' ? '🚀 Current' : job.type === 'intern' ? '💼 Internship' : '🤝 Volunteer'}
+                            {job.type === 'current' ? t('current') : job.type === 'intern' ? t('internship') : t('volunteer')}
                           </Badge>
                         </div>
                         <p className="text-white/80 mb-3 font-medium text-lg">
@@ -256,14 +262,14 @@ const Index = () => {
         <section id="skills">
           <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
             <TrendingUp className="h-8 w-8 text-primary-light" />
-            Skills
+            {t('skillsTitle')}
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="bg-gradient-card border-0 shadow-card-hover hover:shadow-elegant transition-all duration-300">
               <CardContent className="p-8">
                 <h3 className="text-xl font-semibold text-white mb-6 flex items-center gap-2">
                   <Database className="h-5 w-5 text-primary-light" />
-                  Technical Skills
+                  {t('technicalSkills')}
                 </h3>
                 <div className="flex flex-wrap gap-3">
                   {skills.technical.map((skill, index) => (
@@ -279,7 +285,7 @@ const Index = () => {
               <CardContent className="p-8">
                 <h3 className="text-xl font-semibold text-white mb-6 flex items-center gap-2">
                   <Users className="h-5 w-5 text-primary-light" />
-                  Soft Skills
+                  {t('softSkills')}
                 </h3>
                 <div className="flex flex-wrap gap-3">
                   {skills.soft.map((skill, index) => (
@@ -297,7 +303,7 @@ const Index = () => {
         <section id="projects">
           <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
             <Database className="h-8 w-8 text-primary-light" />
-            Featured Projects
+            {t('projectsTitle')}
           </h2>
           <div className="grid gap-8">
             {/* Featured Project */}
@@ -310,7 +316,7 @@ const Index = () => {
                       <BarChart3 className="h-6 w-6 text-primary-light" />
                     </div>
                     <div>
-                      <Badge className="mb-3 bg-primary/20 text-primary border-primary/30">Featured Project</Badge>
+                      <Badge className="mb-3 bg-primary/20 text-primary border-primary/30">{t('featuredProject')}</Badge>
                       <h3 className="text-2xl font-bold text-white group-hover:text-primary-light transition-colors duration-300">
                         {project.title}
                       </h3>
@@ -351,9 +357,9 @@ const Index = () => {
           <div className="bg-gradient-hero rounded-2xl p-12 text-primary-foreground relative overflow-hidden">
             <div className="absolute inset-0 bg-black/10 rounded-2xl"></div>
             <div className="relative">
-              <h2 className="text-3xl font-bold mb-6 text-white">Let's Connect</h2>
+              <h2 className="text-3xl font-bold mb-6 text-white">{t('contactTitle')}</h2>
               <p className="text-lg mb-8 max-w-2xl mx-auto text-white/90">
-                Ready to turn your data challenges into strategic opportunities? Let's discuss how we can work together.
+                {t('contactSubtitle')}
               </p>
               <div className="flex flex-wrap justify-center gap-6">
                 <Button 
