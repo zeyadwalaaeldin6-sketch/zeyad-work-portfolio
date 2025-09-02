@@ -4,7 +4,6 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { SmoothNavigation } from "@/components/SmoothNavigation";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
-import { ThemeToggle } from "@/components/ThemeToggle";
 import { useTranslation } from "@/hooks/useTranslation";
 
 const Index = () => {
@@ -68,9 +67,6 @@ const Index = () => {
 
   return (
     <div className={`min-h-screen bg-background scroll-smooth ${isRTL ? 'rtl' : 'ltr'}`}>
-      {/* Theme Toggle */}
-      <ThemeToggle />
-      
       {/* Language Switcher */}
       <LanguageSwitcher onLanguageChange={changeLanguage} />
       
