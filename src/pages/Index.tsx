@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { SmoothNavigation } from "@/components/SmoothNavigation";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { useTranslation } from "@/hooks/useTranslation";
 
 const Index = () => {
@@ -67,6 +68,9 @@ const Index = () => {
 
   return (
     <div className={`min-h-screen bg-background scroll-smooth ${isRTL ? 'rtl' : 'ltr'}`}>
+      {/* Theme Toggle */}
+      <ThemeToggle />
+      
       {/* Language Switcher */}
       <LanguageSwitcher onLanguageChange={changeLanguage} />
       
@@ -97,7 +101,7 @@ const Index = () => {
                     className="bg-primary hover:bg-primary-dark shadow-glow hover:shadow-elegant transition-all duration-500 hover:scale-105"
                     asChild
                   >
-                    <a href="mailto:Zeyadwalaaeldin6@gmail.com" className="flex items-center gap-2">
+                    <a href="mailto:zeyadwalaaeldin@outlook.com" className="flex items-center gap-2">
                       <Mail className="h-4 w-4" />
                       {t('contactMe')}
                     </a>
@@ -368,9 +372,9 @@ const Index = () => {
                   className="bg-white/10 backdrop-blur-sm border-white/30 hover:bg-white/20 text-white"
                   asChild
                 >
-                  <a href="mailto:Zeyadwalaaeldin6@gmail.com" className="flex items-center gap-2">
+                  <a href="mailto:zeyadwalaaeldin@outlook.com" className="flex items-center gap-2">
                     <Mail className="h-5 w-5" />
-                    Zeyadwalaaeldin6@gmail.com
+                    zeyadwalaaeldin@outlook.com
                   </a>
                 </Button>
                 <Button 
