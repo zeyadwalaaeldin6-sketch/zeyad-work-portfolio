@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { SmoothNavigation } from "@/components/SmoothNavigation";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { RatingsSection } from "@/components/RatingsSection";
 import { useTranslation } from "@/hooks/useTranslation";
 
 const Index = () => {
@@ -400,6 +401,9 @@ const Index = () => {
           </div>
         </section>
       </main>
+
+      {/* Ratings Section */}
+      <RatingsSection />
 
       {/* Footer */}
       <footer className="border-t border-border bg-muted/30">
