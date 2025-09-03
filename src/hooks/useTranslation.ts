@@ -49,11 +49,7 @@ const translations = {
     contactTitle: 'Let\'s Connect',
     contactSubtitle: 'Ready to turn your data into actionable insights?',
     contactDescription: 'Whether you\'re looking to optimize operations, understand customer behavior, or make data-driven decisions, I\'m here to help transform your numbers into strategic advantages.',
-    getInTouch: 'Get In Touch',
-    
-    // Ratings Section
-    ratingsTitle: 'Rate My Work',
-    ratingsDescription: 'Share your experience working with me'
+    getInTouch: 'Get In Touch'
   },
   ar: {
     // Navigation
@@ -101,11 +97,7 @@ const translations = {
     contactTitle: 'لنتواصل',
     contactSubtitle: 'مستعد لتحويل بياناتك إلى رؤى قابلة للتنفيذ؟',
     contactDescription: 'سواء كنت تتطلع لتحسين العمليات، أو فهم سلوك العملاء، أو اتخاذ قرارات مدفوعة بالبيانات، أنا هنا لمساعدتك في تحويل أرقامك إلى مزايا استراتيجية.',
-    getInTouch: 'ابدأ التواصل',
-    
-    // Ratings Section
-    ratingsTitle: 'قيم عملي',
-    ratingsDescription: 'شارك تجربتك في العمل معي'
+    getInTouch: 'ابدأ التواصل'
   }
 };
 
