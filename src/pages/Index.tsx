@@ -43,14 +43,12 @@ const Index = () => {
       highlight: true
     },
     {
-      title: "Canadian Superstore Sales Analysis",
-      description: "Conducted comprehensive analysis of Canadian superstore sales data across multiple provinces, identifying seasonal trends, product performance patterns, and regional sales variations. Developed data-driven recommendations to optimize inventory management, enhance customer targeting strategies, and maximize revenue potential across different market segments.",
-      highlight: true
+      title: "Canadian Superstore Sales Analysis", 
+      description: "Conducted comprehensive analysis of Canadian superstore sales data across multiple provinces, identifying seasonal trends, product performance patterns, and regional sales variations."
     },
     {
       title: "Budget vs Actual Financial Analysis",
-      description: "Performed detailed variance analysis comparing company budgeted forecasts against actual financial performance. Analyzed spending patterns, identified cost overruns and savings opportunities, and provided actionable insights to improve budget accuracy and financial planning processes for better organizational financial control.",
-      highlight: true
+      description: "Performed detailed variance analysis comparing company budgeted forecasts against actual financial performance, identifying cost overruns and savings opportunities."
     },
     {
       title: "Sales Data Analysis", 
