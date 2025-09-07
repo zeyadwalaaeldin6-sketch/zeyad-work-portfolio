@@ -116,9 +116,9 @@ const Index = () => {
                     asChild
                   >
                     <a href="https://www.linkedin.com/in/zeyadwalaaeldin" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                      <Linkedin className="h-4 w-4" />
-                      LinkedIn
-                    </a>
+                        <Linkedin className="h-4 w-4" />
+                        {t('linkedin')}
+                      </a>
                   </Button>
                 </div>
                 {/* Bottom row: WhatsApp and GitHub */}
@@ -129,9 +129,9 @@ const Index = () => {
                     asChild
                   >
                     <a href="https://wa.me/201158166331" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                      <MessageCircle className="h-4 w-4" />
-                      WhatsApp
-                    </a>
+                        <MessageCircle className="h-4 w-4" />
+                        {t('whatsapp')}
+                      </a>
                   </Button>
                   <Button 
                     size="lg" 
@@ -139,9 +139,9 @@ const Index = () => {
                     asChild
                   >
                     <a href="https://github.com/zeyadwalaaeldin6-sketch" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                      <Github className="h-4 w-4" />
-                      GitHub
-                    </a>
+                        <Github className="h-4 w-4" />
+                        {t('github')}
+                      </a>
                   </Button>
                 </div>
               </div>

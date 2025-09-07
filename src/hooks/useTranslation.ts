@@ -49,7 +49,13 @@ const translations = {
     contactTitle: 'Let\'s Connect',
     contactSubtitle: 'Ready to turn your data into actionable insights?',
     contactDescription: 'Whether you\'re looking to optimize operations, understand customer behavior, or make data-driven decisions, I\'m here to help transform your numbers into strategic advantages.',
-    getInTouch: 'Get In Touch'
+    getInTouch: 'Get In Touch',
+    
+    // Social Media & Links
+    email: 'Email',
+    linkedin: 'LinkedIn',
+    whatsapp: 'WhatsApp',
+    github: 'GitHub'
   },
   ar: {
     // Navigation
@@ -97,7 +103,13 @@ const translations = {
     contactTitle: 'لنتواصل',
     contactSubtitle: 'مستعد لتحويل بياناتك إلى رؤى قابلة للتنفيذ؟',
     contactDescription: 'سواء كنت تتطلع لتحسين العمليات، أو فهم سلوك العملاء، أو اتخاذ قرارات مدفوعة بالبيانات، أنا هنا لمساعدتك في تحويل أرقامك إلى مزايا استراتيجية.',
-    getInTouch: 'ابدأ التواصل'
+    getInTouch: 'ابدأ التواصل',
+    
+    // Social Media & Links
+    email: 'البريد الإلكتروني',
+    linkedin: 'لينكد إن',
+    whatsapp: 'واتساب',
+    github: 'جيت هاب'
   }
 };
 
