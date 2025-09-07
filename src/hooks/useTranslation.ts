@@ -74,7 +74,23 @@ const translations = {
     communicationSkill: 'Communication',
     presentationSkill: 'Presentation Skills',
     teamworkSkill: 'Teamwork',
-    attentionToDetailSkill: 'Attention to Detail'
+    attentionToDetailSkill: 'Attention to Detail',
+    
+    // Projects
+    project1Title: 'UK Train Data Analysis',
+    project1Desc: 'Analyzed UK train station data to identify performance bottlenecks, passenger flow patterns, and provided strategic insights and solutions to optimize railway operations and improve passenger experience.',
+    project2Title: 'Canadian Superstore Sales Analysis',
+    project2Desc: 'Conducted comprehensive analysis of Canadian superstore sales data across multiple provinces, identifying seasonal trends, product performance patterns, and regional sales variations.',
+    project3Title: 'Budget vs Actual Financial Analysis',
+    project3Desc: 'Performed detailed variance analysis comparing company budgeted forecasts against actual financial performance, identifying cost overruns and savings opportunities.',
+    project4Title: 'Sales Data Analysis',
+    project4Desc: 'Extracted insights and trends to support strategic decision-making through comprehensive sales performance evaluation.',
+    project5Title: 'Financial Performance Analysis',
+    project5Desc: 'Evaluated key financial metrics to assess company performance and identify growth opportunities.',
+    project6Title: 'Premier League Players Data Analysis',
+    project6Desc: 'Explored player statistics and performance patterns through advanced data visualization and statistical modeling.',
+    project7Title: 'Customer Segmentation Analysis',
+    project7Desc: 'Developed comprehensive customer classification models using RFM analysis and clustering algorithms to optimize marketing strategies and improve customer retention rates.'
   },
   ar: {
     // Navigation
@@ -147,7 +163,23 @@ const translations = {
     communicationSkill: 'مهارات التواصل',
     presentationSkill: 'مهارات العرض',
     teamworkSkill: 'العمل الجماعي',
-    attentionToDetailSkill: 'الاهتمام بالتفاصيل'
+    attentionToDetailSkill: 'الاهتمام بالتفاصيل',
+    
+    // Projects
+    project1Title: 'تحليل بيانات القطارات البريطانية',
+    project1Desc: 'تحليل شامل لبيانات محطات القطارات البريطانية لتحديد نقاط الاختناق في الأداء وأنماط تدفق الركاب، مع تقديم رؤى استراتيجية وحلول لتحسين عمليات السكك الحديدية.',
+    project2Title: 'تحليل مبيعات المتاجر الكندية',
+    project2Desc: 'تحليل شامل لبيانات مبيعات المتاجر الكندية عبر مقاطعات متعددة، وتحديد الاتجاهات الموسمية وأنماط أداء المنتجات والتباينات الإقليمية في المبيعات.',
+    project3Title: 'تحليل الميزانية مقابل الأداء الفعلي',
+    project3Desc: 'تحليل تباين مفصل لمقارنة التوقعات المالية المخططة مع الأداء المالي الفعلي، وتحديد تجاوزات التكاليف وفرص التوفير.',
+    project4Title: 'تحليل بيانات المبيعات',
+    project4Desc: 'استخراج الرؤى والاتجاهات لدعم اتخاذ القرارات الاستراتيجية من خلال التقييم الشامل لأداء المبيعات.',
+    project5Title: 'تحليل الأداء المالي',
+    project5Desc: 'تقييم المؤشرات المالية الرئيسية لتقييم أداء الشركة وتحديد فرص النمو.',
+    project6Title: 'تحليل بيانات لاعبي الدوري الإنجليزي',
+    project6Desc: 'استكشاف إحصائيات اللاعبين وأنماط الأداء من خلال التصور المتقدم للبيانات والنمذجة الإحصائية.',
+    project7Title: 'تحليل تجميع العملاء',
+    project7Desc: 'تطوير نماذج تصنيف شاملة للعملاء باستخدام تحليل RFM وخوارزميات التجميع لتحسين الاستراتيجيات التسويقية ومعدلات الاحتفاظ بالعملاء.'
   }
 };
 

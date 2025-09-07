@@ -38,33 +38,33 @@ const Index = () => {
 
   const projects = [
     {
-      title: "UK Train Data Analysis",
-      description: "Analyzed UK train station data to identify performance bottlenecks, passenger flow patterns, and provided strategic insights and solutions to optimize railway operations and improve passenger experience.",
+      title: t('project1Title'),
+      description: t('project1Desc'),
       highlight: true
     },
     {
-      title: "Canadian Superstore Sales Analysis", 
-      description: "Conducted comprehensive analysis of Canadian superstore sales data across multiple provinces, identifying seasonal trends, product performance patterns, and regional sales variations."
+      title: t('project2Title'), 
+      description: t('project2Desc')
     },
     {
-      title: "Budget vs Actual Financial Analysis",
-      description: "Performed detailed variance analysis comparing company budgeted forecasts against actual financial performance, identifying cost overruns and savings opportunities."
+      title: t('project3Title'),
+      description: t('project3Desc')
     },
     {
-      title: "Sales Data Analysis", 
-      description: "Extracted insights and trends to support strategic decision-making through comprehensive sales performance evaluation."
+      title: t('project4Title'), 
+      description: t('project4Desc')
     },
     {
-      title: "Financial Performance Analysis",
-      description: "Evaluated key financial metrics to assess company performance and identify growth opportunities."
+      title: t('project5Title'),
+      description: t('project5Desc')
     },
     {
-      title: "Premier League Players Data Analysis",
-      description: "Explored player statistics and performance patterns through advanced data visualization and statistical modeling."
+      title: t('project6Title'),
+      description: t('project6Desc')
     },
     {
-      title: "Customer Segmentation Analysis",
-      description: "Developed comprehensive customer classification models using RFM analysis and clustering algorithms to optimize marketing strategies and improve customer retention rates."
+      title: t('project7Title'),
+      description: t('project7Desc')
     }
   ];
 
