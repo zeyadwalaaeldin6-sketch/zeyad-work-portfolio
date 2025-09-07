@@ -11,26 +11,26 @@ const Index = () => {
   
   const workExperience = [
     {
-      role: "Data Analysis Trainee",
-      company: "DEPI Program, Ministry of Communications and Information Technology",
+      role: t('jobRole1'),
+      company: t('jobCompany1'),
       period: "Jun 2025 – Present",
       type: "current"
     },
     {
-      role: "Financial Inclusion and Risk Management Intern",
-      company: "Commercial International Bank Egypt (CIB)",
+      role: t('jobRole2'),
+      company: t('jobCompany2'),
       period: "Aug 2025",
       type: "intern"
     },
     {
-      role: "Accounting Intern",
-      company: "Arab African International Bank (AAIB)",
+      role: t('jobRole3'),
+      company: t('jobCompany3'),
       period: "Jul 2025",
       type: "intern"
     },
     {
-      role: "Delegate of Economics and Banking (Volunteer)",
-      company: "SBS Student Activity",
+      role: t('jobRole4'),
+      company: t('jobCompany4'),
       period: "Feb 2025 – Aug 2025",
       type: "volunteer"
     }
@@ -69,8 +69,8 @@ const Index = () => {
   ];
 
   const skills = {
-    technical: ["Data Analysis", "Financial Analysis", "Power BI", "Excel"],
-    soft: ["Communication", "Presentation Skills", "Teamwork", "Attention to Detail"]
+    technical: [t('dataAnalysisSkill'), t('financialAnalysisSkill'), "Power BI", t('excelSkill')],
+    soft: [t('communicationSkill'), t('presentationSkill'), t('teamworkSkill'), t('attentionToDetailSkill')]
   };
 
   return (

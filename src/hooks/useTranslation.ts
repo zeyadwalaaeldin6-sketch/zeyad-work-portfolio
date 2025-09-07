@@ -55,7 +55,26 @@ const translations = {
     email: 'Email',
     linkedin: 'LinkedIn',
     whatsapp: 'WhatsApp',
-    github: 'GitHub'
+    github: 'GitHub',
+    
+    // Work Experience
+    jobRole1: 'Data Analysis Trainee',
+    jobCompany1: 'DEPI Program, Ministry of Communications and Information Technology',
+    jobRole2: 'Financial Inclusion and Risk Management Intern',
+    jobCompany2: 'Commercial International Bank Egypt (CIB)',
+    jobRole3: 'Accounting Intern',
+    jobCompany3: 'Arab African International Bank (AAIB)',
+    jobRole4: 'Delegate of Economics and Banking (Volunteer)',
+    jobCompany4: 'SBS Student Activity',
+    
+    // Skills
+    dataAnalysisSkill: 'Data Analysis',
+    financialAnalysisSkill: 'Financial Analysis',
+    excelSkill: 'Excel',
+    communicationSkill: 'Communication',
+    presentationSkill: 'Presentation Skills',
+    teamworkSkill: 'Teamwork',
+    attentionToDetailSkill: 'Attention to Detail'
   },
   ar: {
     // Navigation
@@ -109,7 +128,26 @@ const translations = {
     email: 'البريد الإلكتروني',
     linkedin: 'لينكد إن',
     whatsapp: 'واتساب',
-    github: 'جيت هاب'
+    github: 'جيت هاب',
+    
+    // Work Experience
+    jobRole1: 'متدرب تحليل بيانات',
+    jobCompany1: 'برنامج DEPI، وزارة الاتصالات وتكنولوجيا المعلومات',
+    jobRole2: 'متدرب الشمول المالي وإدارة المخاطر',
+    jobCompany2: 'البنك التجاري الدولي (CIB)',
+    jobRole3: 'متدرب محاسبة',
+    jobCompany3: 'البنك العربي الأفريقي الدولي (AAIB)',
+    jobRole4: 'مُمثل الاقتصاد والمصارف (تطوع)',
+    jobCompany4: 'نشاط الطلاب SBS',
+    
+    // Skills
+    dataAnalysisSkill: 'تحليل البيانات',
+    financialAnalysisSkill: 'التحليل المالي',
+    excelSkill: 'اكسيل',
+    communicationSkill: 'مهارات التواصل',
+    presentationSkill: 'مهارات العرض',
+    teamworkSkill: 'العمل الجماعي',
+    attentionToDetailSkill: 'الاهتمام بالتفاصيل'
   }
 };
 
