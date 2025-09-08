@@ -24,7 +24,7 @@ const navItems: NavItem[] = [
 export const SmoothNavigation = () => {
   const [activeSection, setActiveSection] = useState('hero');
   const [isVisible, setIsVisible] = useState(false);
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
 
   useEffect(() => {
     // Show navigation after initial load
@@ -68,11 +68,18 @@ export const SmoothNavigation = () => {
     }
   };
 
+  const isArabic = language === 'ar';
+  
   return (
     <nav 
       className={cn(
-        "fixed right-6 top-1/2 -translate-y-1/2 z-50 transition-all duration-700 ease-out",
-        isVisible ? "translate-x-0 opacity-100" : "translate-x-16 opacity-0"
+        "fixed top-1/2 -translate-y-1/2 z-50 transition-all duration-700 ease-out",
+        isArabic ? "left-6" : "right-6",
+        isVisible 
+          ? "translate-x-0 opacity-100" 
+          : isArabic 
+            ? "-translate-x-16 opacity-0" 
+            : "translate-x-16 opacity-0"
       )}
     >
       <div className="bg-background/20 backdrop-blur-md border border-primary/20 rounded-2xl p-2 shadow-elegant">
@@ -101,16 +108,24 @@ export const SmoothNavigation = () => {
               {/* Label - appears on hover */}
               <span 
                 className={cn(
-                  "absolute left-full ml-4 px-3 py-2 bg-background/90 backdrop-blur-sm",
+                  "absolute px-3 py-2 bg-background/90 backdrop-blur-sm",
                   "border border-primary/20 rounded-lg shadow-elegant text-sm font-medium",
                   "transition-all duration-300 pointer-events-none whitespace-nowrap",
-                  "opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0",
+                  "opacity-0 group-hover:opacity-100",
+                  isArabic 
+                    ? "right-full mr-4 translate-x-2 group-hover:translate-x-0" 
+                    : "left-full ml-4 -translate-x-2 group-hover:translate-x-0",
                   activeSection === id ? "text-primary-light" : "text-white"
                 )}
               >
                 {t(labelKey)}
                 {/* Arrow */}
-                <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1 w-2 h-2 bg-background/90 border-l border-b border-primary/20 rotate-45"></div>
+                <div className={cn(
+                  "absolute top-1/2 -translate-y-1/2 w-2 h-2 bg-background/90 border-primary/20 rotate-45",
+                  isArabic 
+                    ? "right-0 translate-x-1 border-r border-t" 
+                    : "left-0 -translate-x-1 border-l border-b"
+                )}></div>
               </span>
 
               {/* Active indicator */}
