@@ -18,6 +18,12 @@ const Index = () => {
       type: "current"
     },
     {
+      role: t('jobRole5'),
+      company: t('jobCompany5'),
+      period: "Sept 2025",
+      type: "intern"
+    },
+    {
       role: t('jobRole2'),
       company: t('jobCompany2'),
       period: "Aug 2025",

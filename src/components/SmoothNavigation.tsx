@@ -81,6 +81,7 @@ export const SmoothNavigation = () => {
             ? "-translate-x-16 opacity-0" 
             : "translate-x-16 opacity-0"
       )}
+      key={isArabic ? 'arabic' : 'english'}
     >
       <div className="bg-background/20 backdrop-blur-md border border-primary/20 rounded-2xl p-2 shadow-elegant">
         <div className="flex flex-col gap-1">

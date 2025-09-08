@@ -66,6 +66,8 @@ const translations = {
     jobCompany3: 'Arab African International Bank (AAIB)',
     jobRole4: 'Delegate of Economics and Banking (Volunteer)',
     jobCompany4: 'SBS Student Activity',
+    jobRole5: 'Digital Marketing Trainee',
+    jobCompany5: 'Banque Misr',
     
     // Skills
     dataAnalysisSkill: 'Data Analysis',
@@ -155,6 +157,8 @@ const translations = {
     jobCompany3: 'البنك العربي الأفريقي الدولي (AAIB)',
     jobRole4: 'مُمثل الاقتصاد والمصارف (تطوع)',
     jobCompany4: 'نشاط الطلاب SBS',
+    jobRole5: 'متدرب التسويق الرقمي',
+    jobCompany5: 'بنك مصر',
     
     // Skills
     dataAnalysisSkill: 'تحليل البيانات',
