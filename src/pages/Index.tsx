@@ -128,7 +128,7 @@ const Index = () => {
                       </a>
                   </Button>
                 </div>
-                {/* Bottom row: WhatsApp, GitHub, and Download CV */}
+                {/* Bottom row: WhatsApp and GitHub */}
                 <div className="flex flex-wrap justify-center gap-4">
                   <Button 
                     size="lg" 
@@ -150,6 +150,9 @@ const Index = () => {
                         {t('github')}
                       </a>
                   </Button>
+                </div>
+                {/* Download CV button at the end */}
+                <div className="flex justify-center">
                   <Button 
                     onClick={() => generateCV(language)}
                     size="lg" 
