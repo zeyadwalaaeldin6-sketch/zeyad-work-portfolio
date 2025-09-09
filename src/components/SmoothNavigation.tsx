@@ -74,14 +74,18 @@ export const SmoothNavigation = () => {
     <nav 
       className={cn(
         "fixed top-1/2 -translate-y-1/2 z-50 transition-all duration-700 ease-out",
-        isArabic ? "left-6" : "right-6",
+        isArabic ? "left-6 right-auto" : "right-6 left-auto",
         isVisible 
           ? "translate-x-0 opacity-100" 
           : isArabic 
             ? "-translate-x-16 opacity-0" 
             : "translate-x-16 opacity-0"
       )}
-      key={isArabic ? 'arabic' : 'english'}
+      key={`nav-${language}`}
+      style={{
+        [isArabic ? 'left' : 'right']: '1.5rem',
+        [isArabic ? 'right' : 'left']: 'auto'
+      }}
     >
       <div className="bg-background/20 backdrop-blur-md border border-primary/20 rounded-2xl p-2 shadow-elegant">
         <div className="flex flex-col gap-1">
